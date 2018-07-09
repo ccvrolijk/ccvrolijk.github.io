@@ -1,0 +1,28 @@
+			<script src="http://ons-wb.nl/index/scripts/library/jquery-3.3.1.min.js"></script>
+			<script>
+			jQuery(document).ready(function(){
+		
+				function load_tracks()
+				{
+					var axel = Math.random() + "";
+					var num = axel * 1000000000000000000;
+				
+					$.ajax({
+						type: "GET",
+						url: "http://ons-wb.nl/obs/nowplaying.php?nocache="+num,
+						dataType: "json",
+						success: function(response) {			
+							$('#music_now').html('');
+							$('<div class="track_now"></div>').html( response.nowplaying ).appendTo('#music_now');
+						}
+					});	
+				}
+			
+				load_tracks();
+			
+				setInterval(function(){
+					load_tracks();
+				},5000);
+			});
+		</script>
+		<h1 id="music_now"></h1>

@@ -1,0 +1,37 @@
+		 		@font-face { font-family: 'Roboto'; src: url('./index/fonts/roboto.woff2') format('woff'); }
+				body { overflow:scroll; font-family: Roboto, sans-serif; padding:0; margin:0; font-size:14px; height:2450px; }
+				/*#progress, #header, #middle, #logo, #container, #playlist, #playlist-ul, #bottom, #rightad, #name, #title, #playpause, #mute-img, #volume-img, #tracktime, #volume,
+					.totaltime, #player, #seekbar, #music_now,#titleyt, #youtube, #twitter, #sitelogo */
+				#header, #middle, .frame, #bottom {position:absolute; }
+				#header { top:0; left:0; background-color:#0e71b8; height:30px; width:400px; border-right:1px solid #076633; }
+				#middle { top:30px; left:0; height:1020px; width:400px; border-right:1px solid #076633; }
+				#sitelogo { margin-left:100px; margin-top:5px; width:212px; height:52px; padding:0; } //
+				#container {margin-left:20px; margin-top:160px; height:55px; width:175px; padding:5px; border:1px solid #076633; font-family: Roboto, sans-serif; }
+				#playpause { top:5px; left:5px; }
+				#mute-img {top:5px; left:30px; }
+				#volume { margin:0; top:5px; left:55px; width:100px; }
+				#volume-img {top:5px; right:5px; }
+				#tracktime { left:5px; top:26px; height:20px; }
+				.totaltime { right:10px; top:26px; height:20px; }
+				#title { left:20px; top:130px; margin:0; width:185px; text-decoration:underline;} /*color:#185c36;*/
+				.nowplaying, .nowplaying img { width:16px; height:16px; padding:0; margin:0; }
+				#music_now { left:20px; top:150px; margin:0; width:380px; font-weight:bold;}
+				#logo, #logo-a { left:10px; top:220px; width:200px; height:80px; padding:0; }
+				.image { width:15px; height:15px; padding:3px; }
+				.icecast { width:10px; height:10px; padding:0; margin:0; }
+				#playlist { left:15px; top:290px; width:210px; }
+				#playlist-ul { padding-left:0; }
+				li { list-style-type: none; }
+				#titleyt { top:330px; left:15px; border:0; text-decoration:underline; }
+				#titleyt a { color:black; }
+				#youtube { top:365px; left:15px; padding:0; margin:0; width:380px; height:214px; }
+				#twitter { top:580px; left:15px; height:445px; width:380px; }
+				a {text-decoration:none; color:#0e71b8; }
+				#bottom { top:1050px; left:0; background-color:#185c36; width:400px; height:30px; border-right:1px solid #076633; }
+				//#rightad { top:5px; left:415px; min-height:100px; height:auto; width:auto; }				
+				.frame { margin-left:401px; width:calc(100% - 400px); height:2450px; overflow:auto;}
+         		iframe { display: block; width:100%; height:100%; border:0; }
+         		#player { display:none; z-index:100; width:1024px; height:576px; left:300px; top:20px; border:20px solid #cbeda6; border-radius:5px; }			
+			 	//#seekbar::-webkit-slider-runnable-track { display:none !important; }
+				#progress { top:45px; left:5px; width:175px; }				
+				//#seekbar { top:62px; left:5px; width:175px; margin:0; padding:0; }
